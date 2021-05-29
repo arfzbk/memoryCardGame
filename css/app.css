@@ -1,0 +1,121 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #ecf0f1;
+  font-family: "Coda", cursive;
+  color: #2c3e50;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.deck {
+  width: 550px;
+  background: linear-gradient(160deg, #1fcabc 20%, #e67070 80%);
+  padding: 32px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 3em;
+}
+.deck .card {
+  height: 110px;
+  width: 22%;
+  margin: 1%;
+  background: #2c3e50;
+  font-size: 0;
+  color: #2c3e50;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+.score-panel {
+  text-align: left;
+  width: 450px;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+.score-panel .stars {
+  margin: 0 1.25rem 0 0;
+  padding: 0;
+  display: inline-block;
+  color: #f1c40f;
+}
+.score-panel .stars li {
+  list-style: none;
+  display: inline-block;
+}
+.score-panel .restart {
+  float: right;
+  cursor: pointer;
+  color: #d35400;
+}
+.dimmed {
+  display: none;
+}
+.timer {
+  float: left;
+  margin: 0 2rem;
+  width: 10vw;
+}
+.selector {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+#container {
+  background: linear-gradient(160deg, #1fcabc 5%, #e67070 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+  border-radius: 10px;
+  width: 500px;
+}
+.selector #container ul {
+  list-style-type: none;
+  padding-left: 0;
+  align-items: center;
+}
+.selector #container ul li {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.selector #container ul li a {
+  text-align: center;
+  text-decoration: none;
+  color: #2c3e50;
+  font-size: 1.4em;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
